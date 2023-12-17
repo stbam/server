@@ -60,7 +60,7 @@ app.post('/', upload.single('image'), (req, res, next) => {
 	});
 });
 
-var port = process.env.PORT || '3000'
+var port ='3000'
 app.listen(port, err => {
 	if (err)
 		throw err
