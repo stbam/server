@@ -5,7 +5,9 @@ var mongoose = require('mongoose')
 var imgSchema = require('./model.js');
 var fs = require('fs');
 var path = require('path');
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+
 require('dotenv').config();
 
 mongoose.connect("mongodb+srv://stbacmtd:stbacmtd123@mernauth.ifu6be5.mongodb.net/mernauth")
