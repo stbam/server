@@ -8,7 +8,7 @@ var path = require('path');
 app.set("view engine", "ejs");
 require('dotenv').config();
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect("mongodb+srv://stbacmtd:stbacmtd123@mernauth.ifu6be5.mongodb.net/mernauth")
 .then(console.log("DB Connected"))
 
 app.use(bodyParser.urlencoded({ extended: false }))
